@@ -2,7 +2,7 @@
 
 il faut 
 
- 1 - configurer l'utilisateur et le mot de passe du VPN dans le fichier "readme".
+ 1 - configurer l'utilisateur et le mot de passe du VPN dans le fichier "vpn_pwd".
  2 - avoir un fichier "configs.zip" contenant les différents fichiers de connexion .ovpn et le certificat (ici c'est ceux d'ipvanish)
  3 - lancer le script install en sudo et regarder les retours du script pour voir si tout se passe bien
 

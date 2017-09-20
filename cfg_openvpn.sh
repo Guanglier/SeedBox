@@ -14,8 +14,8 @@ fichier=${files[RANDOM % ${#files[@]}]}
 rm $filedest
 cp $fichier     $filedest
 
-#------modificer le fichier : le fichier contenant le mot de passe est "readme"
-sed -i "s/auth-user-pass/auth-user-pass readme/g" $filedest
+#------modificer le fichier : le fichier contenant le mot de passe est "vpn_pwd"
+sed -i "s/auth-user-pass/auth-user-pass vpn_pwd/g" $filedest
 
 
 

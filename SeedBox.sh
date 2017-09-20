@@ -25,7 +25,7 @@ start() {
     stop
     cd /etc/openvpn
     ./cfg_openvpn.sh
-    openvpn --config /etc/openvpn/cfg.ovpn --daemon --script-security 2 --up /etc/openvpn/vpn_up.sh  --down /etc/openvpn/vpn_up.sh
+    openvpn --config /etc/openvpn/cfg.ovpn --daemon --script-security 2 --up /etc/openvpn/vpn_StateChange.sh  --down /etc/openvpn/vpn_StateChange.sh
 }
 
 #==================================================

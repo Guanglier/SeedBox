@@ -50,9 +50,9 @@ sudo mv cfg_openvpn.sh          /etc/openvpn/
 sudo chmod -c 755 /etc/openvpn/cfg_openvpn.sh
 
 echo "->copie scripts..."
-sudo rm /etc/openvpn/readme
-sudo mv readme                  /etc/openvpn/
-sudo chmod -c 640 /etc/openvpn/readme
+sudo rm /etc/openvpn/vpn_pwd
+sudo mv vpn_pwd                  /etc/openvpn/
+sudo chmod -c 640 /etc/openvpn/vpn_pwd
 
 echo "->copie scripts..."
 sudo rm /etc/openvpn/cfg_transmission.sh
@@ -60,9 +60,9 @@ sudo mv cfg_transmission.sh     /etc/openvpn/
 sudo chmod -c 755 /etc/openvpn/cfg_transmission.sh
 
 echo "->copie scripts..."
-sudo rm /etc/openvpn/vpn_up.sh
-sudo mv vpn_up.sh /etc/openvpn/
-sudo chmod -c 755 /etc/openvpn/vpn_up.sh
+sudo rm /etc/openvpn/vpn_StateChange.sh
+sudo mv vpn_StateChange.sh /etc/openvpn/
+sudo chmod -c 755 /etc/openvpn/vpn_StateChange.sh
 
 
 echo "->copie scripts..."
@@ -165,7 +165,7 @@ echo "==============================================================="
 echo ""
 echo "Attention il vous reste à configurer :"
 echo "---------------------------------------------------------------"
-echo " * login et mot de passe du vpn dans le fichier 'readme', login, à la ligne, mot de passe"
+echo " * login et mot de passe du vpn dans le fichier 'vpn_pwd', login, à la ligne, mot de passe"
 echo " * chemin de téléchargement dans le fichier /etc/transmission-daemon/settings_template.json"
 echo " "
 echo "Pour lancer : sudo service SeedBox start"
